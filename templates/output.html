@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title Page-->
+    <title>Heart Disease Predictor</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all" />
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all" />
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all" />
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+
+    <!-- Main CSS-->
+    <!--    <link href="css/main.css" rel="stylesheet" media="all" />-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Health Predictor</h1>
+        </nav>
+    </header>
+
+
+
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <!-- <div class="card-left">
+                    <img width="400px" height="550px"
+                        src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                        alt="">
+                </div> -->
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Health Report</h2>
+                    <div class="diabetic">
+                        <b>
+                            {{ prediction_text }}
+                        </b>
+                        <div class="row">
+                            <div class="col">
+                                <h2>There is a significant likelihood that you may develop <b>diabetes</b> in the near
+                                    future.
+                                </h2>
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="checkbox" id="chck1">
+                                        <label class="tab-label" for="chck1">How can I prevent diabetes?</label>
+                                        <div class="tab-content">
+                                            You can’t prevent autoimmune and genetic forms of diabetes. But there are
+                                            some steps you can take to lower your risk for developing prediabetes, Type
+                                            2 diabetes and gestational diabetes, including:
+                                            <br>
+                                            Eat a healthy diet, such as the Mediterranean diet.<br>
+                                            Get physically active. Aim for 30 minutes a day at least five days a
+                                            week.<br>
+                                            Work to achieve a weight that’s healthy for you.<br>
+                                            Manage your stress.<br>
+                                            Limit alcohol intake.<br>
+                                            Get adequate sleep (typically 7 to 9 hours) and seek treatment for sleep
+                                            disorders.<br>
+                                            Quit smoking.<br>
+                                            Take medications as directed by your healthcare provider to manage existing
+                                            risk factorsfor heart disease.<br>
+                                            It’s important to note that there are some diabetes risk factors you can’t
+                                            change, such as your genetics/family history, age and race. Know that Type 2
+                                            diabetes is a complex condition that involves many contributing factors.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h2>
+                            <b>
+                                {{ prediction_text }}
+                            </b>
+                        </h2> -->
+                    </div>
+                </div>
+            </div>
+
+            <footer class="foot">
+                Diabetes Predictor
+            </footer>
+
+            <!-- Jquery JS-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <!-- Vendor JS-->
+            <script src="vendor/select2/select2.min.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
