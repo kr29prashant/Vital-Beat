@@ -1,5 +1,5 @@
 # Vital-Beat: Heart Disease Predictor
-A machine learning project focused on early heart disease prediction, leveraging advanced technologies including Support Vector Machines, Naïve Bayes, Decision Trees, and Random Forest algorithms.
+<p>A machine learning project focused on early heart disease prediction, leveraging advanced technologies including Support Vector Machines, Naïve Bayes, Decision Trees, and Random Forest algorithms.</p>
 
 The project achieved an impressive 90.16% accuracy using Logistic Regression, significantly enhancing heart disease prediction. It addresses global health concerns related to cardiovascular diseases, contributing to healthcare technology advancement.
 
